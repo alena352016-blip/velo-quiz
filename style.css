@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+*{
+    font-size: 18px;
+}
+body{
+    margin: 0;
+}
+#start_screen{
+    width:100vw;
+    height:100vh;
+    background-image: url("images/bg_start.png");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element{
+    position: absolute;
+    z-index:0;
+}
+
+.el-1{
+    top:-15vh;
+    left:0;
+}
+.el-2{
+    right:0;
+    top:0;
+}
+.el-3{
+    left:0;
+    bottom:-15vh;
+}
+.el-4{
+    right:0;
+    bottom:-20vh;
+}
+#btn-start{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-start img{
+    position:absolute;
+    top:-13vh;
+    z-index: 1;
+}
+#btn-start button{
+    z-index:100;
+    font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+  border:none;
+  background-color:rgba(0,0,0,0);
+  font-size:96px;
+  color:white;
+}
